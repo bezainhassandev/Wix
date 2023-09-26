@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wix</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .photo img {
+      box-shadow: 0 0 0 #000;
+      position: static;
+      width: 29px;
+      height: 45px;
+      object-fit: cover;
+      object-position: 50% 50%;
+
+      justify-content: center;
+      justify-content: space-between;
+    }
+    .button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      color: rgb(125 43 196);
+      box-shadow: 0 0 5px purple, 0 0 25px purple;
+      background-color: rgb(125 43 196);
+      color: #fff !important;
+    }
+
+    .button:hover {
+      box-shadow: 0 0 5px purple, 0 0 25px purple, 0 0 50px purple,
+        0 0 100px purple, 0 0 200px purple;
+      background-color: #fff !important;
+      color: #000 !important;
+    }
+    .row {
+      margin: 0;
+    }
+    @media (min-width: 992px) {
+      .col-lg-6.large-screen-margin {
+        margin-left: -110px;
+      }
+      .img {
+        width: 900px;
+        height: 550px;
+      }
+      .margin-left {
+        position: absolute;
+        margin-left: -70%;
+        z-index: 1;
+      }
+      .margin {
+        position: absolute;
+        margin-left: -30%;
+        margin-top: -10%;
+        z-index: 1;
+      }
+      .padding {
+        padding-left: 10%;
+        padding-top: 12%;
+      }
+      .height {
+        width: 585px;
+        height: 487px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      #next-section {
+        padding-top: 100px;
+      }
+      .display {
+        display: none !important;
+      }
+    }
+    #map-container {
+      width: 100%;
+      height: 400px;
+    }
+    #nav {
+      background-color: transparent;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    #nav .navbar-expand-lg {
+      transition: background-color 0.3s ease, opacity 0.3s ease;
+    }
+    #nav.scrolled {
+      background-color: #222323 !important;
+      position: sticky !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav" style="background-color: rgb(34 35 35);">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a
+            class="navbar-brand"
+            href="https://missvanessa0808.wixsite.com/bizcard"
+          >
+            <img
+              src="https://static.wixstatic.com/media/942665_02e44ee9b5ad4427bc9d71678325f388~mv2.png/v1/crop/x_22,y_0,w_365,h_585/fill/w_59,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%20101_edited.png"
+              width="47"
+              height="75"
+              class="d-inline-block align-top"
+              alt="Logo"
+            />
+          </a>
+          <div class="d-flex flex-column">
+            <div class="navbar-brand text-light">Intouch</div>
+            <div class="navbar-brand-text text-light">Bizcard</div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler navbar-toggler-white bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://missvanessa0808.wixsite.com/bizcard"
+                >About Intouch</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://missvanessa0808.wixsite.com/bizcard"
+                >Product Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://missvanessa0808.wixsite.com/bizcard"
+                >Card Variations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://missvanessa0808.wixsite.com/bizcard"
+                >Services &amp; Price</a
+              >
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <svg
+                data-bbox="0 0 50 50"
+                data-type="shape"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 50 50"
+              >
+                <g>
+                  <path
+                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"
+                    fill=" #fff"
+                  ></path>
+                </g>
+              </svg>
+              <a class="nav-link text-light" href="#">Log In</a>
+            </li>
+            <li class="ms-3 nav-item">
+              <button
+                type="button"
+                class="btn btn-primary px-2 ml-2"
+                style="
+                  background-color: #a238ff;
+                  border: 0px;
+                  width: 130px;
+                  border-radius: 50px;
+                "
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      id="next-section"
+      style="
+        overflow: hidden;
+        background-color: rgb(34 35 35);
+      "
+    >
+      <div style="background: radial-gradient(
+        circle at 96.05364481608073% 5.310923258463542%,
+        rgba(22, 87, 217, 0.53) 0%,
+        17.5%,
+        rgba(22, 87, 217, 0) 35%
+      ),
+      radial-gradient(
+        circle at 0% 96.65751139322917%,
+        #361355 0%,
+        22.75%,
+        rgba(54, 19, 85, 0) 35%
+      ),
+      radial-gradient(
+        circle at 48.9013671875% 49.521484375%,
+        #000000 0%,
+        100%,
+        rgba(0, 0, 0, 0) 100%
+      ); height: 100%; padding: 9% 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12 padding">
+              <div
+                class="d-flex flex-column justify-content-center rounded-5 p-2"
+                style="
+                  background-color: rgb(34, 35, 35,0.5);
+                  box-shadow: 50px -0px 50px 50px rgba(34, 35, 35, 0.6);
+                "
+              >
+                <div class="d-flex align-items-center gap-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    data-bbox="0 0 323.295 323.296"
+                    height="40"
+                    width="40"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 323.295 323.296"
+                    role="presentation"
+                    aria-hidden="true"
+                  >
+                    <g>
+                      <path
+                        d="M161.647 0l57.151 104.497 104.497 57.15-104.497 57.152-57.151 104.497-57.15-104.497L0 161.647l104.497-57.15L161.647 0z"
+                        fill=" #BADA55"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h5 class="text-light">Powered by MB9</h5>
+                </div>
+                <h1 class="text-light" style="font-size: 65px">
+                  NFC Business Card
+                </h1>
+                <p class="text-light">Streamline networking efforts!</p>
+                <button
+                  type="button"
+                  class="btn btn-primary px-2"
+                  style="
+                    background-color: #a238ff;
+                    border: 0px;
+                    width: 130px;
+                    border-radius: 50px;
+                  "
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="position-relative">
+                <div class="margin">
+                  <img
+                    src="https://static.wixstatic.com/media/942665_bf16ac764ac2450dba8ed81b1f3b18a7~mv2.png/v1/crop/x_196,y_0,w_1724,h_1080/fill/w_1185,h_743,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1_edited.png"
+                    alt=""
+                    style="transform: rotate(-25deg)"
+                    class="img"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-lg-9 p-0">
+            <div
+              style="
+                background-image: url('https://static.wixstatic.com/media/942665_8369126a7ec34a5ebeabbb741808ffcf~mv2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+              "
+            >
+              <div style="background: rgba(0, 0, 0, 0.7); height: 100%">
+                <div class="row" style="padding: 12% 0% 12% 12%">
+                  <div class="col-12 col-md-8 offset-md-2">
+                    <div
+                      class="d-flex flex-column justify-content-center"
+                      style="padding: 20px"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <div
+                          style="
+                            width: 50px;
+                            height: 50px;
+                            background-color: #000;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-bottom: 5px;
+                          "
+                        >
+                          <img
+                            src="https://static.wixstatic.com/media/942665_02e44ee9b5ad4427bc9d71678325f388~mv2.png/v1/crop/x_22,y_0,w_365,h_585/fill/w_36,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%20101_edited.png"
+                            alt=""
+                            width="29px"
+                            height="45px"
+                            style="transform: rotate(-40deg)"
+                          />
+                        </div>
+                        <h5 class="text-light">What is MB9 intouch Bizcard?</h5>
+                      </div>
+                      <h1 class="text-light">
+                        "Start Business <br />
+                        Intouch, Stay <br />
+                        Business Intouch!"
+                      </h1>
+                      <p class="text-light">
+                        In today’s digital age, traditional paper business cards
+                        <br />
+                        are becoming obsolete. With the emergence of Near File
+                        <br />
+                        Communication (NFC) technology, digital business ...
+                      </p>
+                      <button type="button" class="btn btn-link">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3"
+            style="
+              background: radial-gradient(
+                  circle at 96.05364481608073% 5.310923258463542%,
+                  rgba(22, 87, 217, 0.53) 0%,
+                  17.5%,
+                  rgba(22, 87, 217, 0) 35%
+                ),
+                radial-gradient(
+                  circle at 0% 96.65751139322917%,
+                  #361355 0%,
+                  22.75%,
+                  rgba(54, 19, 85, 0) 35%
+                ),
+                radial-gradient(
+                  circle at 48.9013671875% 49.521484375%,
+                  #000000 0%,
+                  100%,
+                  rgba(0, 0, 0, 0) 100%
+                );
+            "
+          >
+            <div class="col-lg-12 col-12 position-relative">
+              <div class="margin-left">
+                <img
+                  src="https://static.wixstatic.com/media/942665_19234e9784d949a087382010389e0c40~mv2.png/v1/crop/x_471,y_13,w_961,h_959/fill/w_820,h_818,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1.png"
+                  alt=""
+                  class="img-fluid"
+                  s
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background: rgb(34, 35, 35)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="m-4">
+              <img
+                src="https://static.wixstatic.com/media/11062b_737642ce41924ee5b25fb15341ac357a~mv2.jpg/v1/crop/x_836,y_0,w_3827,h_3666/fill/w_451,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Laughing%20Work%20Colleagues.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 py-5 large-screen-margin">
+            <div>
+              <div class="d-flex align-items-center">
+                <img
+                  width="70px"
+                  src="https://static.wixstatic.com/media/c837a6_1393b10934564651a5d48f974973c96f~mv2.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/icon%201.png"
+                  alt="Icon"
+                />
+                <h5 class="text-light">Design & Software Development</h5>
+              </div>
+              <h1 class="text-light">Embrace The New Way of Networking.</h1>
+              <p class="text-light">
+                The NFC business card is a modern way of exchanging business
+                information which also eliminates the hassle of carrying so many
+                paper cards around...
+              </p>
+              <button type="button" class="btn btn-link">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        background-color: rgb(34 35 35);
+        width: 100%;
+        height: 100%;
+        color: white;
+      "
+    >
+      <div
+        style="
+          background-image: url(https://static.wixstatic.com/media/c837a6_f9e52562144944449741488bfd2681f4~mv2.png/v1/fill/w_1265,h_1223,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_f9e52562144944449741488bfd2681f4~mv2.png);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <div class="row" style="padding-top: 20px">
+          <div class="col-md-12">
+            <div style="text-align: center">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_712e7109c7f845ef9bff5bb34cccff37~mv2.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/icon%203.png"
+                alt="icon"
+              />
+              <h1 class="text-light">Explore The Core Advatages</h1>
+              <p>
+                Make a lasting impression and stay ahead of the curve while
+                enjoying all the upsides that <br />
+                technology has offered.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #294e6d;
+                    position: absolute;
+                  "
+                >
+                  01
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Eco-Friendly</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    Contribute to sustainability <br />
+                    by helping reduce the <br />
+                    carbon footprint associated <br />
+                    with traditional paper <br />
+                    business cards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #40304e;
+                    position: absolute;
+                  "
+                >
+                  02
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Editable</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    Digital NFC business cards <br />
+                    allow customers to be <br />
+                    always up-to-date with <br />
+                    their latest information <br />
+                    without worrying about <br />
+                    printing out new cards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #a38079;
+                    position: absolute;
+                  "
+                >
+                  03
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Convenient</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    Enjoy a seamless and <br />
+                    effortless networking <br />
+                    experience by simply <br />
+                    tapping the digital NFC <br />
+                    business card to exchange <br />
+                    contact information.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #ab98a5;
+                    position: absolute;
+                  "
+                >
+                  04
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Cost-effective</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    By eliminating the heaps of <br />
+                    physical cards, it reduces <br />
+                    the printing and distribution <br />
+                    costs of the business.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #5f617c;
+                    position: absolute;
+                  "
+                >
+                  05
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Versatile</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    Add more functionality, <br />
+                    such as links to websites or <br />
+                    social media accounts. It <br />
+                    helps companies <br />
+                    differentiate in a crowded <br />
+                    marketplace.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div style="position: relative; margin-bottom: 50px">
+                <h1
+                  style="
+                    font-size: 176px;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    color: #4f5341;
+                    position: absolute;
+                  "
+                >
+                  06
+                </h1>
+              </div>
+              <div style="padding-top: 10px">
+                <div
+                  style="
+                    position: absolute;
+                    margin-top: 45px;
+                    padding-left: 70px;
+                  "
+                >
+                  <h4>Measurable</h4>
+                </div>
+                <br />
+                <div style="padding-top: 60px; padding-left: 60px">
+                  <p style="padding-top: 40px">
+                    By accessing real-time <br />
+                    analysis, users can track <br />
+                    the effectiveness of their <br />
+                    networking efforts and <br />
+                    make datadriven decisions <br />
+                    to optimize their networking <br />
+                    strategy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        background-image: url(https://static.wixstatic.com/media/11062b_7150c7e7a20a49788e54ee54c6ed2189~mv2.jpg/v1/fill/w_980,h_700,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7150c7e7a20a49788e54ee54c6ed2189~mv2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+      "
+    >
+      <div
+        style="
+          background-image: linear-gradient(
+            to right,
+            rgba(25, 25, 25, 0.7) 0%,
+            #6064d897 100%
+          );
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <div class="container" style="padding: 60px 0px">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-8">
+              <div class="container d-flex align-items-center">
+                <img
+                  class="w-20"
+                  src="https://static.wixstatic.com/media/c837a6_2ffc67866b8a486880211d2472fb9901~mv2.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/icon%204.png"
+                  alt="Icon"
+                  class="img-fluid"
+                />
+                <div>
+                  <h5 class="py-3 text-light">Design & Software Development</h5>
+                </div>
+              </div>
+              <div class="container py-4">
+                <h1 class="text-light display-4 fw-normal" style="color: #fff">
+                  Customized Look <br />
+                  + CRM System
+                </h1>
+              </div>
+              <div class="container pb-4">
+                <p class="text-light">
+                  Our Intouch Bizcard provides a high degree of customization,
+                  allowing the <br />
+                  company to seamlessly incorporate its branding into business
+                  cards' interface.
+                </p>
+                <p class="text-light">
+                  It also enables the organization to have a unique URL link
+                  address and a
+                </p>
+                <button type="button" class="btn btn-link text-light">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        padding-top: 50px;
+        background-image: radial-gradient(
+            circle at 24.583333333333332% 33.888889948527016%,
+            rgba(126, 161, 230, 0.57) 0%,
+            29.120000000000005%,
+            rgba(126, 161, 230, 0) 52%
+          ),
+          radial-gradient(
+            circle at 5.601628621419271% 89.0545654296875%,
+            #000000 0%,
+            17.5%,
+            rgba(0, 0, 0, 0) 35%
+          ),
+          radial-gradient(
+            circle at 95.35859425862631% 89.99893188476562%,
+            #000000 0%,
+            20%,
+            rgba(0, 0, 0, 0) 40%
+          ),
+          radial-gradient(
+            circle at 83.1944465637207% 66.66666666666666%,
+            rgba(194, 125, 255, 0.71) 0%,
+            34.5%,
+            rgba(194, 125, 255, 0) 50%
+          ),
+          radial-gradient(
+            circle at 4.5797475179036455% 9.796346028645834%,
+            #000000 0%,
+            42%,
+            rgba(0, 0, 0, 0) 70%
+          ),
+          radial-gradient(
+            circle at 93.6865234375% 11.42578125%,
+            #000000 0%,
+            42%,
+            rgba(0, 0, 0, 0) 70%
+          ),
+          radial-gradient(
+            circle at 48.9013671875% 49.521484375%,
+            #000000 0%,
+            100%,
+            rgba(0, 0, 0, 0) 100%
+          );
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_15f5a06def3641e1bbf493281a2e37df~mv2.png/v1/fill/w_100,h_100,al_c,lg_1,q_85,enc_auto/icon%206.png"
+                alt="icon"
+                width="80"
+                height="80"
+              />
+              <p class="text-light">Advocate Your Branding</p>
+              <h1 class="text-light">
+                Cards In Various Materials & <br />
+                Personalized Design Sleek Metal Variation
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-md-12">
+            <div class="container">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-center"
+              >
+                <div class="order-md-0">
+                  <h3 style="text-align: center; color: #7ccbd7">
+                    Sleek Metal
+                  </h3>
+                  <div class="row">
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_f90c97de57894119bc00cf6f38a13d7f~mv2.png/v1/crop/x_5,y_0,w_994,h_590/fill/w_354,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_32a6b0d25d024e61a6f2e46cea68c662~mv2.png/v1/crop/x_2,y_0,w_1001,h_590/fill/w_356,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-5 order-md-1">
+                  <h6 class="text-light">Variation</h6>
+                  <img
+                    src="https://static.wixstatic.com/media/942665_d19cc3cfe6854fc48be2ecffe74bf0ac~mv2.png/v1/crop/x_0,y_177,w_1024,h_247/fill/w_530,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sa.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="d-flex justify-content-around text-light display">
+                    <h5>Black</h5>
+                    <h5>Silver</h5>
+                    <h5>Gold</h5>
+                    <h5>Bronze</h5>
+                    <h5>Red</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-12">
+            <div class="container">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-center"
+              >
+                <div class="order-md-0">
+                  <h3 style="text-align: center; color: #e0bdff">
+                    Vibrant PVC
+                  </h3>
+                  <div class="row">
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_5977fe85ea9d4f73919999e4ec0a25d9~mv2.png/v1/fill/w_356,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cnp%20law%20(5).png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_2ca22458ae634fbe8edee4177b4810b9~mv2.png/v1/fill/w_356,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cnp%20law%20(4).png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4">
+                  <h6 class="text-light">Variation</h6>
+                  <div class="d-flex flex-column align-items-center">
+                    <img
+                      src="https://static.wixstatic.com/media/942665_e9faecaeb6f14884b421751323ae7838~mv2.png/v1/crop/x_0,y_99,w_1024,h_238/fill/w_531,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sa%20(2).png"
+                      alt=""
+                      class="p-2 img-fluid"
+                    />
+
+                    <img
+                      src="https://static.wixstatic.com/media/942665_e9faecaeb6f14884b421751323ae7838~mv2.png/v1/crop/x_0,y_412,w_1024,h_246/fill/w_531,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sa%20(2).png"
+                      alt=""
+                      class="p-2 img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-md-12">
+            <div class="container">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-center"
+              >
+                <div class="order-md-0">
+                  <h3 style="text-align: center; color: #7ccbd7">
+                    Sleek Metal
+                  </h3>
+                  <div class="row">
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_0bc727a6dbb544d5b5c6422c7780f64a~mv2.png/v1/fill/w_356,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        class="m-2 img-fluid"
+                        src="https://static.wixstatic.com/media/942665_0bc727a6dbb544d5b5c6422c7780f64a~mv2.png/v1/fill/w_356,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-5 order-md-1">
+                  <h6 class="text-light">Variation</h6>
+                  <img
+                    src="https://static.wixstatic.com/media/942665_7f492a5236a747c99df33f57e32da7df~mv2.png/v1/crop/x_0,y_205,w_1024,h_215/fill/w_526,h_109,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sa%20(5).png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="d-flex justify-content-around text-light display">
+                    <h5>Maple</h5>
+                    <h5>Bamboo</h5>
+                    <h5>Walnut</h5>
+                    <h5>Sapele</h5>
+                    <h5>Cherry</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding-bottom: 80px; background-color: #222323">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div
+              style="
+                text-align: center;
+                background-image: url(https://static.wixstatic.com/media/11062b_d7631f338f4840e789e67ee5b194b569~mv2.jpeg/v1/fill/w_470,h_755,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_d7631f338f4840e789e67ee5b194b569~mv2.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+              "
+            >
+              <div
+                style="
+                  background: rgb(0, 0, 0, 0.5);
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="ezgif.com-webp-to-png (1000).webp" alt="" />
+                <h5 style="text-align: center" class="text-light">
+                  Be Your Way
+                </h5>
+                <h2 style="text-align: center" class="text-light">
+                  Bespoke Interface and URL Link
+                </h2>
+                <div>
+                  <img
+                    src="https://static.wixstatic.com/media/942665_0f336c27219a4decb9e744479393c98a~mv2.png/v1/fill/w_535,h_390,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cnp%20law%20(9)_edited.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12">
+            <div
+              style="
+                text-align: center;
+                background-image: url(https://static.wixstatic.com/media/11062b_b43a11434495401e9e966359152e1a4b~mv2.jpeg/v1/fill/w_470,h_755,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b43a11434495401e9e966359152e1a4b~mv2.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+              "
+            >
+              <div
+                style="
+                  background: rgb(0, 0, 0, 0.5);
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="ezgif.com-webp-to-png (1000).webp" alt="" />
+                <h5 style="text-align: center" class="text-light">
+                  Be Your Way
+                </h5>
+                <h2 style="text-align: center" class="text-light">
+                  Bespoke Interface and URL Link
+                </h2>
+                <div>
+                  <img
+                    src="https://static.wixstatic.com/media/942665_facf44a8d0f84b43a88fe3803d6257a9~mv2.png/v1/fill/w_430,h_322,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        background-color: transparent;
+        background-image: radial-gradient(
+            circle at 84.86111323038737% 76.66670481363931%,
+            #0f3a91 0%,
+            17.5%,
+            rgba(15, 58, 145, 0) 35%
+          ),
+          radial-gradient(
+            circle at 71.4697265625% 10.475260416666666%,
+            #361355 0%,
+            15.75%,
+            rgba(54, 19, 85, 0) 35%
+          ),
+          radial-gradient(
+            circle at 30.6944465637207% 11.666700839996338%,
+            #071d48 0%,
+            41.99999999999999%,
+            rgba(7, 29, 72, 0) 60%
+          ),
+          radial-gradient(
+            circle at 38.7548828125% 96.91080729166667%,
+            #b3b3b3 0%,
+            25%,
+            rgba(179, 179, 179, 0) 50%
+          ),
+          radial-gradient(
+            circle at 17.003580729166668% 58.362630208333336%,
+            #7d2bc4 0%,
+            35%,
+            rgba(125, 43, 196, 0) 50%
+          ),
+          radial-gradient(
+            circle at 48.9013671875% 49.521484375%,
+            #000000 0%,
+            100%,
+            rgba(0, 0, 0, 0) 100%
+          );
+      "
+    >
+      <div class="container">
+        <div class="text-center py-5">
+          <div class="d-flex justify-content-center">
+            <div
+              style="
+                width: 70px;
+                height: 70px;
+                background-color: #000;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 5px;
+              "
+            >
+              <img
+                src="https://static.wixstatic.com/media/942665_02e44ee9b5ad4427bc9d71678325f388~mv2.png/v1/crop/x_22,y_0,w_365,h_585/fill/w_36,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%20101_edited.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <p
+            class="text-white"
+            style="font-family: 'Questrial', sans-serif; font-size: 14px"
+          >
+            Passionate team drives <br />ultimate solution
+          </p>
+          <div>
+            <h1 class="my-4" style="font-size: 50px; color: white">
+              Our Services & Pricing
+            </h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-between px-5">
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="20 20 160 160"
+              viewBox="20 20 160 160"
+              height="60"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="shape"
+              role="presentation"
+              aria-hidden="true"
+              aria-label=""
+            >
+              <g>
+                <path
+                  d="M100 20c-44.118 0-80 35.882-80 80s35.882 80 80 80 80-35.882 80-80h-80V20z"
+                  fill=" #BADA55"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">
+              Tech troubleshooting &<br />problem-solving
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="38.5 20 123 160"
+              viewBox="38.5 20 123 160"
+              height="60"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="color"
+              role="presentation"
+              aria-hidden="true"
+              aria-label=""
+            >
+              <defs>
+                <style>
+                  svg [data-color="1"] {
+                    fill: #bada55;
+                  }
+                </style>
+              </defs>
+              <g>
+                <path
+                  d="M102.887 20v117.469c32.371 0 58.613-26.296 58.613-58.734C161.5 46.296 135.258 20 102.887 20z"
+                  fill="#9D6200"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M38.5 121.266C38.5 153.704 64.742 180 97.113 180V62.532c-32.371 0-58.613 26.296-58.613 58.734z"
+                  fill="#9D6200"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  data-color="1"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">Data backup & recovery</p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="19.5 19.5 161 161"
+              viewBox="19.5 19.5 161 161"
+              height="60"
+              width="60"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="shape"
+              role="presentation"
+              aria-hidden="true"
+              aria-label=""
+            >
+              <g>
+                <path
+                  d="M100 19.5c-44.449 0-80.5 36.051-80.5 80.5s36.051 80.5 80.5 80.5 80.5-36.051 80.5-80.5-36.051-80.5-80.5-80.5zm0 131.735c-28.247 0-51.235-22.903-51.235-51.235 0-28.247 22.903-51.235 51.235-51.235 28.247 0 51.235 22.903 51.235 51.235 0 28.247-22.988 51.235-51.235 51.235z"
+                  fill=" #BADA55"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">NFC web hosting & maintenance</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-between px-5">
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="37 20.283 126 160"
+              viewBox="37 20.283 126 160"
+              height="60"
+              width="60"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="shape"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <g>
+                <path
+                  d="M130.308 67.463a32.451 32.451 0 0 0-13.622 2.986V20.283c-44.01 0-79.686 35.817-79.686 80s35.677 80 79.686 80v-50.166a32.451 32.451 0 0 0 13.622 2.986c18.055 0 32.692-14.694 32.692-32.821s-14.637-32.819-32.692-32.819z"
+                  fill=" #BADA55"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">Interface design & customization</p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="37 20.283 126 160"
+              viewBox="37 20.283 126 160"
+              height="60"
+              width="60"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="shape"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <g>
+                <path
+                  d="M130.308 67.463a32.451 32.451 0 0 0-13.622 2.986V20.283c-44.01 0-79.686 35.817-79.686 80s35.677 80 79.686 80v-50.166a32.451 32.451 0 0 0 13.622 2.986c18.055 0 32.692-14.694 32.692-32.821s-14.637-32.819-32.692-32.819z"
+                  fill=" #BADA55"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">Guarantee 1 hour response time</p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="1.8 15.9 56.4 28.2"
+              height="40"
+              width="60"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="1.8 15.9 56.4 28.2"
+              role="presentation"
+              aria-hidden="true"
+              aria-label=""
+            >
+              <g>
+                <path
+                  d="M30 28.2c8.8 0 15.9 7.1 15.9 15.9h12.3c0-15.6-12.6-28.2-28.2-28.2S1.8 28.5 1.8 44.1h12.3c0-8.8 7.1-15.9 15.9-15.9z"
+                  fill=" #BADA55"
+                ></path>
+              </g>
+            </svg>
+            <p class="pt-2 text-white">Remote access and support</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img
+            class="height"
+            src="https://static.wixstatic.com/media/942665_f5010b7302374eac81095918edde2697~mv2.png/v1/crop/x_0,y_5,w_683,h_569/fill/w_683,h_569,al_c,q_90,enc_auto/cnp%20law%20(7)_edited.png"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div class="container text-center px-2 px-md-5">
+          <div class="row g-4 g-md-5 p-3 p-md-5">
+            <div class="col-md-6 col-12">
+              <div class="p-3 bg-dark" style="border-radius: 20px">
+                <h5
+                  class="card-title d-flex justify-content-center text-success"
+                >
+                  NFC Cards
+                </h5>
+                <ul class="text-white text-start">
+                  <li class="pt-3">Customized Card Design & Craft</li>
+                  <li class="pt-3">Customized Employee Information</li>
+                  <li class="pt-3">NFC Enabled for Both iOS & Android</li>
+                  <li class="pt-3">QR Code for Undetectable Mobiles</li>
+                  <li class="pt-3">Various Options in Card Material</li>
+                  <li class="pt-3">One-time Fee for The Card</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="p-4 bg-dark" style="border-radius: 20px">
+                <h5
+                  class="card-title d-flex justify-content-center text-success"
+                >
+                  Software Development
+                </h5>
+                <ul class="text-white text-start">
+                  <li class="pt-3">
+                    Customized Web Responsive Company Dashboard
+                  </li>
+                  <li class="pt-3">Dedicated Company IP Address</li>
+                  <li class="pt-3">Customized Company Landing Page</li>
+                  <li class="pt-3">Team Management System</li>
+                  <li class="pt-3">Tech Support & Maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pt-4 px-2 px-md-5">
+          <div class="row px-2 px-md-5">
+            <div class="col px-2 py-4 card bg-black rounded-5 mx-2 mx-md-4">
+              <h5
+                class="card-title text-center text-success"
+                style="color: #bada55"
+              >
+                How It Works
+              </h5>
+              <div
+                class="d-md-flex justify-content-between text-white align-items-center"
+              >
+                <div class="d-flex flex-column align-items-center">
+                  <h2>01</h2>
+                  <div
+                    class="w-100 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div
+                      style="border-bottom: 6px dotted #0f3a91; width: 100%"
+                    ></div>
+                    <div
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f2b6aa;
+                        border-radius: 50px;
+                        border: 6px dotted #f2b6aa;
+                        margin-top: -12px;
+                      "
+                    ></div>
+                  </div>
+                  <p class="text-center px-4">Get in touch with us</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center mt-4 mt-md-0">
+                  <h2>02</h2>
+                  <div
+                    class="w-100 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div
+                      style="border-bottom: 6px dotted #0f3a91; width: 100%"
+                    ></div>
+                    <div
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f2b6aa;
+                        border-radius: 50px;
+                        border: 6px dotted #f2b6aa;
+                        margin-top: -12px;
+                      "
+                    ></div>
+                  </div>
+                  <p class="text-center px-4">Choose your card</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center mt-4 mt-md-0">
+                  <h2>03</h2>
+                  <div
+                    class="w-100 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div
+                      style="border-bottom: 6px dotted #0f3a91; width: 100%"
+                    ></div>
+                    <div
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f2b6aa;
+                        border-radius: 50px;
+                        border: 6px dotted #f2b6aa;
+                        margin-top: -12px;
+                      "
+                    ></div>
+                  </div>
+                  <p class="text-center px-4">Confirm design</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center mt-4 mt-md-0">
+                  <h2>04</h2>
+                  <div
+                    class="w-100 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div
+                      style="border-bottom: 6px dotted #0f3a91; width: 100%"
+                    ></div>
+                    <div
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f2b6aa;
+                        border-radius: 50px;
+                        border: 6px dotted #f2b6aa;
+                        margin-top: -12px;
+                      "
+                    ></div>
+                  </div>
+                  <p class="text-center px-4">Make payment</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center mt-4 mt-md-0">
+                  <h2>05</h2>
+                  <div
+                    class="w-100 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div
+                      style="border-bottom: 6px dotted #0f3a91; width: 100%"
+                    ></div>
+                    <div
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f2b6aa;
+                        border-radius: 50px;
+                        border: 6px dotted #f2b6aa;
+                        margin-top: -12px;
+                      "
+                    ></div>
+                  </div>
+                  <p class="text-center px-4">Get card delivered</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center p-4">
+          <button class="button">Make Your Card & Get Price</button>
+        </div>
+      </div>
+    </section>
+    <footer style="background: rgb(34, 35, 35)">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="Text text-white text-center" style="padding: 6% 0">
+              <h1>Contact us and Get</h1>
+              <h1>15% Off Your First Purchase</h1>
+            </div>
+          </div>
+          <div class="col-lg-6" style="padding-top: 8%">
+            <div>
+              <div class="d-flex align-items-center" style="padding-bottom: 4%">
+                <svg
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="53.5 36.5 93 127"
+                  viewBox="53.5 36.5 93 127"
+                  height="35"
+                  width="100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="color"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M99.999 163.5l-3.25-3.895C94.986 157.487 53.5 107.468 53.5 82.916 53.5 57.323 74.359 36.5 99.999 36.5c25.644 0 46.501 20.823 46.501 46.416 0 24.551-41.483 74.571-43.252 76.688l-3.249 3.896zm0-118.56c-20.978 0-38.046 17.036-38.046 37.977 0 16.359 25.019 51.015 38.046 67.305 13.029-16.29 38.048-50.946 38.048-67.305 0-20.942-17.068-37.977-38.048-37.977z"
+                      fill="rgba(125,43,196,1)"
+                      data-color="rgba(125,43,196,1)"
+                    ></path>
+                    <path
+                      d="M99.999 101.658c-10.351 0-18.775-8.407-18.775-18.741 0-10.335 8.424-18.743 18.775-18.743 10.353 0 18.777 8.408 18.777 18.743 0 10.333-8.424 18.741-18.777 18.741zm0-29.046c-5.69 0-10.32 4.621-10.32 10.304 0 5.68 4.63 10.303 10.32 10.303 5.692 0 10.324-4.622 10.324-10.303 0-5.682-4.632-10.304-10.324-10.304z"
+                      fill="rgba(125,43,196,1)"
+                      data-color="rgba(125,43,196,1)"
+                    ></path>
+                  </g>
+                </svg>
+                <h6 class="text-white">62 Syed Alwi Road Singapore 207641</h6>
+              </div>
+              <div class="d-flex align-items-center">
+                <svg
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="38.999 39 122.001 122"
+                  viewBox="38.999 39 122.001 122"
+                  height="30"
+                  width="100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="color"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M66.248 47.383c2.234 0 4.783.813 6.746 3.742 5.289 7.88 10.39 15.304 13.215 20.359.956 1.715 1.884 6.569-1.238 10.083-2.696 3.029-5.074 3.772-6.511 5.984-.985 1.524-2.11 4.931-.259 8.848 2.213 4.678 4.913 8.52 10.838 14.54 6.018 5.917 9.859 8.615 14.546 10.829 1.53.722 2.984.99 4.276.99 2.019 0 3.647-.651 4.573-1.249 2.213-1.434 2.958-3.812 5.989-6.507 1.827-1.621 4.014-2.15 5.935-2.15 1.779 0 3.33.454 4.152.916 5.057 2.82 12.484 7.919 20.372 13.203 5.532 3.707 3.515 9.499 2.736 11.32-.783 1.821-4.788 7.847-13.4 12.352-2.37 1.239-5.497 1.974-9.288 1.974-11.935 0-30.424-7.304-52.356-29.225-28.895-28.88-32.402-51.787-27.261-61.607 4.506-8.61 10.536-12.613 12.36-13.392.854-.368 2.589-1.01 4.575-1.01zm0-8.383c-3.278 0-6.106.923-7.9 1.699C54.8 42.211 47.294 47.555 41.88 57.9c-6.765 12.922-3.295 39.381 28.762 71.419C98.22 156.883 118.998 161 128.929 161c5.024 0 9.457-.987 13.175-2.93 10.331-5.404 15.687-12.899 17.222-16.475 3.579-8.37 1.312-16.839-5.772-21.589-1.216-.813-2.421-1.623-3.606-2.42-6.566-4.414-12.769-8.585-17.35-11.141-2.239-1.252-5.244-1.975-8.238-1.977-4.382 0-8.36 1.473-11.504 4.264-2.088 1.855-3.389 3.574-4.34 4.827-.196.259-.44.582-.628.813h-.027c-.197 0-.43-.062-.694-.187-3.482-1.644-6.597-3.675-12.199-9.178-5.508-5.6-7.54-8.714-9.185-12.193-.152-.321-.191-.558-.189-.718.231-.188.557-.433.817-.63 1.255-.95 2.973-2.249 4.826-4.33 5.306-5.974 5.143-14.623 2.3-19.731-2.579-4.614-6.782-10.857-11.234-17.465-.772-1.148-1.557-2.312-2.346-3.487C76.736 41.648 71.866 39 66.248 39z"
+                      fill="rgba(125,43,196,1)"
+                      data-color="rgba(125,43,196,1)"
+                    ></path>
+                  </g>
+                </svg>
+                <h6 class="text-white">+65 8808 7952</h6>
+              </div>
+              <div class="d-flex align-items-center pt-4">
+                <svg
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="35 56 130 88"
+                  viewBox="35 56 130 88"
+                  height="20"
+                  width="100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="color"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M35 56v88h130V56H35zm64.879 58.87L49.15 64.499h101.455L99.879 114.87zM72.191 99.311l-28.755 30.025V70.757l28.755 28.554zm6.009 5.967l21.679 21.525 21.677-21.525 28.93 30.224H49.254L78.2 105.278zm49.364-5.967l29-28.796v59.092l-29-30.296z"
+                      fill="rgba(125,43,196,1)"
+                      data-color="rgba(125,43,196,1)"
+                    ></path>
+                  </g>
+                </svg>
+                <h6 class="text-white">hello@intouchbizcard.com</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="row">
+                <div class="col-md-6 p-1">
+                  <div class="mb-3">
+                    <label for="name" class="form-label text-white">Name</label>
+                    <div
+                      style="box-shadow: 0px 1px 20px 0px rgba(125, 43, 196, 1)"
+                    >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 p-1">
+                  <div class="mb-3">
+                    <label for="Last name" class="form-label text-white"
+                      >Last name</label
+                    >
+                    <div
+                      style="box-shadow: 0px 1px 20px 0px rgba(125, 43, 196, 1)"
+                    >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your Last name"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <div style="box-shadow: 0px 1px 20px 0px rgba(125, 43, 196, 1)">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    maxlength="6"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-white"
+                  >Message</label
+                >
+                <div style="box-shadow: 0px 1px 20px 0px rgba(125, 43, 196, 1)">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button
+                  type="submit"
+                  class="btn btn-primary rounded-5"
+                  style="padding: 10px 50px"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC62V6Acq6sv6xtkq9hgmdHCJOBqYCOzoA&callback=initMap"></script>
+        <div class="h4 pb-2 mb-4 border-bottom border-white"></div>
+        <div class="map-container" id="map-container"></div>
+        <script>
+          // Initialize and display the map
+          function initMap() {
+            var mapCenter = { lat: 40.7128, lng: -74.006 }; // New York City coordinates
+            var map = new google.maps.Map(
+              document.getElementById("map-container"),
+              {
+                center: mapCenter,
+                zoom: 12,
+              }
+            );
+
+            var marker = new google.maps.Marker({
+              position: mapCenter,
+              map: map,
+              title: "Marker Title",
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC62V6Acq6sv6xtkq9hgmdHCJOBqYCOzoA&callback=initMap"></script>
+        <div class="h4 pb-2 border-bottom border-white"></div>
+
+        <div class="d-flex flex-wrap justify-content-between text-white">
+          <p class="mb-3">© 2035 by MB9inc.com. Powered and secured by Wix</p>
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap gap-3"
+          >
+            <img
+              src="https://static.wixstatic.com/media/c837a6_0c038d1905244309869036f4b2a87fba~mv2.png/v1/fill/w_43,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Visa.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_24b45424cb584c759d470b3ab5bd6ee8~mv2.png/v1/fill/w_43,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/brand-mastercard_3x.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_240e03fc0ff340c7b76226c536a43614~mv2.png/v1/fill/w_44,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/brand-chinaunionpay_3x.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_6dedb38a1d3b430ca7518edc51aef96f~mv2.png/v1/fill/w_49,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/brand-jcb_3x.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_c2b8bb51f9ea4214a3dde0df612a7322~mv2.png/v1/fill/w_44,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/brand-amex_3x.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_3bd26f0fc46543128309cbbd71f8a5e3~mv2.png/v1/fill/w_44,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Discover.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_c948fcfd7a7d4f8bb8b80c76565f9738~mv2.png/v1/fill/w_34,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Diners.png"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/c837a6_e124e91ed49541508b0a0b63f6490d1c~mv2.png/v1/fill/w_38,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PayPal.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end text-white w-100">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap w-50"
+          >
+            <p class="mb-3">Shipping & Returns Terms & Condition</p>
+            <p class="mb-3">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const navbar = document.querySelector(".navbar-expand-lg");
+      const hero = document.getElementById("hero");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
